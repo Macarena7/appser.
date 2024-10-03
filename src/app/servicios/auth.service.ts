@@ -14,14 +14,14 @@ export class AuthService {
 
   constructor() {}
 
-  // Método para verificar credenciales de docente
+  // Método para verificar docente
   loginDocente(nombre: string, password: string): boolean {
     return this.docentes.some(
       (docente) => docente.nombre === nombre && docente.password === password
     );
   }
 
-  // Método para verificar credenciales de alumno
+  // Método para verificar alumno
   loginAlumno(nombre: string, password: string): boolean {
     return this.alumnos.some(
       (alumno) => alumno.nombre === nombre && alumno.password === password
